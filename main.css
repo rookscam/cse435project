@@ -1,0 +1,85 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+#active-nav {
+  color: white;
+}
+
+.center {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.circular-will {
+	width: 100px;
+	height: 150px;
+	border-radius: 50px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	background: url(images/will.jpg) no-repeat;
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  display: block;
+  margin: 0 auto;
+	}
+
+  .circular-cam {
+	width: 100px;
+	height: 150px;
+	border-radius: 50px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	background: url(images/me.png) no-repeat;
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  display: block;
+  margin: 0 auto;
+	}
+
+  .circular-emilio {
+	width: 100px;
+	height: 150px;
+	border-radius: 50px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	background: url(images/cam.jpg) no-repeat;
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  display: block;
+  margin: 0 auto;
+	}
+
+  .circular-claury {
+	width: 100px;
+	height: 150px;
+	border-radius: 50px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	background: url(images/cam.jpg) no-repeat;
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  display: block;
+  margin: 0 auto;
+	}
+
+  .circular-yumo {
+	width: 100px;
+	height: 150px;
+	border-radius: 50px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	background: url(images/cam.jpg) no-repeat;
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  display: block;
+  margin: 0 auto;
+	}
