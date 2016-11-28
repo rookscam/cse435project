@@ -19,6 +19,8 @@
 
     <!-- Custom styles for this template -->
     <link href="main.css" rel="stylesheet">
+    <link href="prototype.css" rel="stylesheet">
+    <script src="prototype.js"></script>
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -45,85 +47,39 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="index.html" active="true">Active Park Assist</a>
-          <a class="navbar-brand" id="active-nav" href="team.html">Team</a>
-          <a class="navbar-brand" href="about.html">About</a>
+          <a class="navbar-brand" href="team.html">Team</a>
+          <a class="navbar-brand" id="active-nav" href="about.html">About</a>
           <a class="navbar-brand" href="secure/members-secure.html">Members</a>
-
-
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <!--<form class="navbar-form navbar-right">
-            <div class="form-group">
-              <input type="text" placeholder="Email" class="form-control">
-            </div>
-            <div class="form-group">
-              <input type="password" placeholder="Password" class="form-control">
-            </div>
-            <button type="submit" class="btn btn-success">Sign in</button>
-          </form>-->
-        </div><!--/.navbar-collapse -->
+        <div id="navbar" class="navbar-collapse collapse"></div><!--/.navbar-collapse -->
       </div>
     </nav>
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
-        <h1>Team Members</h1>
-        <p>Here are the members of our team.  Each member has a distinct role listed below their name.</p>
+        <h1>Prototype v2</h1>
+        <p>info</p>
         <!--<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>-->
       </div>
     </div>
 
-    <div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-4">
-          <div class="circular-cam"></div>
-          <div class="center">
-            <h2>Cameron Rooks</h2>
-            <p>Artifacts Manager / Webmaster</p>
-            <p><a class="btn btn-default" href="http://www.cse.msu.edu/~rookscam" role="button">View personal website &raquo;</a></p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="circular-will"></div>
-          <div class="center">
-            <h2>William Mcgee</h2>
-            <p>Project Manager</p>
-            <p><a href="https://www.linkedin.com/in/william-mcgee-b0a61310a" class="hvr-grow" ><img src="images/linkedin-logo.png" height="40" width="40"></a></p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="circular-claury"></div>
-          <div class="center">
-            <h2>Claury Mejia</h2>
-            <p>Doman Expert / Customer Liason</p>
-            <p><a href="https://www.linkedin.com/in/claury-mejia-62a98a63" class="hvr-grow" ><img src="images/linkedin-logo.png" height="40" width="40"></a></p>
-          </div>
-        </div>
-        <div class="col-md-4">
-           <div class="circular-emilio"></div>
-          <div class="center">
-            <h2>Emilio Castillo</h2>
-            <p>Project Facilitator</p>
-            <!--<p><a class="btn btn-default" href="http://www.cse.msu.edu/~rookscam" role="button">View personal website &raquo;</a></p>-->
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="circular-yumo"></div>
-          <div class="center">
-            <h2>Yumo Wang</h2>
-            <p>Safety / Security Engineer</p>
-            <!--<p><a class="btn btn-default" href="http://www.cse.msu.edu/~rookscam" role="button">View personal website &raquo;</a></p>-->
-          </div>
-        </div>
-    </div>
+    <div class="container" style="text-align:center">
+        <button id="start-btn" onclick="startClick()" class="sync-btn start">Set Vehicle to Valid Speed</button>
+        <button class="sync-btn start disable" disabled="true" id="activate-btn" onclick="activateClick()">Activate</button>
+        <!--<button id="stop-btn" onclick="stopClick()"class="sync-btn stop">Apply Brake</button>-->
+        <span id="info-text" style="display:block">To start, the vehicle must be moving 5MPH or less, otherwise the system is unavailable and the button is greyed out.</span>
+        <img class="sync" id="sync-image" src="images/prezi/sync-initial.png">
+        <button id="yes-btn" class="sync-btn start disable" disabled="true" onclick="parallelClick()">Parallel</button>
+        <button id="no-btn"class="sync-btn start disable" disabled="true" onclick="perpClick()">Perpendicular</button>
+        <button id="stop-btn" onclick="stopClick()"class="sync-btn stop">Apply Brake</button>
 
-      <hr>
 
-      <footer>
-        <!--<p>&copy; 2016 Company, Inc.</p>-->
-      </footer>
+        <hr>
+
+        <footer>
+            <p>Michigan State University CSE435 APA2 Fall 2016</p>
+        </footer>
     </div> <!-- /container -->
 
 
