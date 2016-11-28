@@ -44,6 +44,17 @@
     color: white;
 }
 
+.yesno {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+}
+
+.yesno:hover {
+    background-color: #008CBA;
+    color: white;
+}
+
 .disable {
     color:lightgray;
     opacity:0.2;
