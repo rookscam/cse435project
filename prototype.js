@@ -43,7 +43,7 @@ function parallelClick() {
         document.getElementById("info-text").innerHTML="If a parking spot is found, a rendering is displayed to the user.  The driver must then validate the parking spot.  The system will cycle through spots one by one.";
 
         document.getElementById("yes-btn").innerHTML = "Yes";
-        document.getElementById("no-btn").innerHTML = "No";
+        document.getElementById("no-btn").innerHTML = "No, try again";
     }
     // continue searching yes
     else if (document.getElementById("yes-btn").innerHTML == "Yes, Continue"){
@@ -88,6 +88,13 @@ function perpClick() {
     else if (document.getElementById("no-btn").innerHTML == "No") {
         document.getElementById("info-text").innerHTML="Active Park Assist has been aborted.";
         abortSystem();
+    }
+    else if (document.getElementById("no-btn").innerHTML == "No, try again") {
+        document.getElementById("sync-image").src="images/prezi/sync-searching.png";
+        document.getElementById("info-text").innerHTML="When the type of parking spot is selected, the Active Park Assist system will begin searching for parking spots.  The system will search for a parking spot for 2 minutes.  The user can stop the system from searching for parking spots at anytime by pressing the Cancel button.";
+
+        document.getElementById("yes-btn").innerHTML = "What if a spot is found?";
+        document.getElementById("no-btn").innerHTML = "What if no spots are found?";
     }
     else if (document.getElementById("no-btn").innerHTML == "What happens if the parking process is completed?"){
         document.getElementById("info-text").innerHTML="When the parking process is completed, a notification will appear on-screen, the vehicle will be shifted into park, and the system will abort.";
