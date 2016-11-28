@@ -4,6 +4,9 @@ function startClick() {
 
     document.querySelector("#activate-btn").classList.remove("disable");
     document.getElementById("activate-btn").disabled = false;
+
+    document.querySelector("#start-btn").classList.add("disable");
+    document.getElementById("start-btn").disabled = true;
 }
 
 function stopClick() {
