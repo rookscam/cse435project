@@ -59,7 +59,7 @@
     <div class="jumbotron">
       <div class="container">
         <h1>Prototype v2</h1>
-        <p>TODO: explain how to use prototype</p>
+        <p>This prototype has been designed to show how a user would interact with the Active Park Assist System.  The image in the center below shows the interface that would be displayed on a vehicle's dashboard while using the system.  To use this, simply press the buttons below to simulate the different steps of the system.  The buttons correspond the actual buttons that appear on the screen.</p>
         <!--<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>-->
       </div>
     </div>
@@ -68,7 +68,7 @@
         <button id="start-btn" onclick="startClick()" class="sync-btn start">Set Vehicle to Valid Speed</button>
         <button class="sync-btn start disable" disabled="true" id="activate-btn" onclick="activateClick()">Activate</button>
         <!--<button id="stop-btn" onclick="stopClick()"class="sync-btn stop">Apply Brake</button>-->
-        <span id="info-text" style="display:block">To start, the vehicle must be moving 5MPH or less, otherwise the system is unavailable and the button is greyed out.</span>
+        <span id="info-text" style="display:block; padding-bottom:10px">To start, the vehicle must be moving 5MPH or less, otherwise the system is unavailable and the button is greyed out.</span>
         <img class="sync" id="sync-image" src="images/prezi/sync-initial.png">
         <button id="yes-btn" class="sync-btn start disable" disabled="true" onclick="parallelClick()">Parallel</button>
         <button id="no-btn"class="sync-btn start disable" disabled="true" onclick="perpClick()">Perpendicular</button>
