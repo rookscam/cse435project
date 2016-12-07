@@ -4,4 +4,4 @@ AuthName "Roaming Access"
 AuthLDAPURL ldap://ds.cse.msu.edu:389/ou=People,dc=cse,dc=msu,dc=edu?uid?sub
 AuthLDAPGroupAttribute memberUid
 AuthLDAPGroupAttributeIsDN off
-Require user rookscam mcgeewil casti140 mejiarod wangyumo
+Require user rookscam mcgeewil casti140 mejiarod wangyumo chengb nguyeng5
